@@ -1,0 +1,3 @@
+MAS factorial{
+agents: factorial2;
+}

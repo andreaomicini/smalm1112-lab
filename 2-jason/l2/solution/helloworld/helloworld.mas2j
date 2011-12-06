@@ -1,0 +1,7 @@
+MAS helloworld {
+
+    infrastructure: Centralised
+
+    agents: helloworld;
+}
+

@@ -1,0 +1,17 @@
+/*
+    Jason Project
+
+    -- created on November 08, 2011
+*/
+
+MAS structuredoperations {
+
+   environment:
+   c4jason.CartagoEnvironment
+
+   agents:
+   userA agentArchClass c4jason.CAgentArch;
+   userB agentArchClass c4jason.CAgentArch;
+    
+   aslSourcePath: "src/asl"; 
+}

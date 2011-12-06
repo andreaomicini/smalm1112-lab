@@ -1,0 +1,17 @@
+/*
+    Jason Project
+
+    -- created on November 15, 2011
+*/
+
+MAS boomeragent {
+   environment:
+   c4jason.CartagoEnvironment
+
+   agents:
+       sample agentArchClass c4jason.CAgentArch;
+
+//   aslSourcePath: "src/asl"; 
+   
+   classpath: "/home/danysk/Apps/Jason/lib/cartago.jar";"/home/danysk/Apps/Jason/lib/c4jason.jar";"/home/danysk/Apps/Jason/lib/2p.jar";
+}

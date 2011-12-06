@@ -1,0 +1,21 @@
+/**
+ * This work by Danilo Pianini is licensed under a Creative Commons
+ * Attribution-NonCommercial-ShareAlike 3.0 Italy License.
+ * Permissions beyond the scope of this license may be available at www.danilopianini.org.
+ */
+/*
+    Jason Project
+
+    -- created on October 17, 2011
+*/
+
+MAS wordgame {
+   infrastructure: Centralised
+
+   agents:
+       player #10;
+       df;
+       broker;
+
+   aslSourcePath: "src/asl"; 
+}

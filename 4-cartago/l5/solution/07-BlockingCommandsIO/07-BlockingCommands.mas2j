@@ -1,0 +1,16 @@
+/*
+    Jason Project
+
+    -- created on November 08, 2011
+*/
+
+MAS blockingcommandsio {
+
+  environment: c4jason.CartagoEnvironment
+
+  agents:
+  sender agentArchClass c4jason.CAgentArch #1;
+  receiver agentArchClass c4jason.CAgentArch #1;
+  
+  aslSourcePath: "src/asl"; 
+}

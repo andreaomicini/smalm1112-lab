@@ -1,0 +1,7 @@
+reaction(rd(rd_all(X,L)),(exo,request),(out(rloadlist(X,[])))).
+reaction(rd(rd_all(X,L)),(exo,response),(in(rd_all(_,_)))).
+reaction(out(rloadlist(X,L)),(endo),(current_tuple(rloadlist(X1,L)), in(X1), in(rloadlist(X,L)), out(rloadlist(X,[X1|L])))).
+reaction(out(rloadlist(X,L)),(endo),(current_tuple(rloadlist(X1,L)), no(X1), in(rloadlist(X,L)), out(rd_all(X,L)))).
+reaction(out(rd_all(_,L)),(endo),(out(emit(L)))).
+reaction(out(emit([X|T])),(endo),(in(emit([X|T])), out(X), out(emit(T)))).
+reaction(out(emit([])),(endo),(in(emit([])))).

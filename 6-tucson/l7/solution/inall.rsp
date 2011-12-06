@@ -1,0 +1,3 @@
+reaction(in(in_all(X,L)),(exo,request),(out(loadlist(X,[])))).
+reaction(out(loadlist(X,L)),(endo),(current_tuple(loadlist(X1,L)), in(X1), in(loadlist(X,L)), out(loadlist(X,[X1|L])))).
+reaction(out(loadlist(X,L)),(endo),(current_tuple(loadlist(X1,L)), no(X1), in(loadlist(X,L)), out(in_all(X,L)))).

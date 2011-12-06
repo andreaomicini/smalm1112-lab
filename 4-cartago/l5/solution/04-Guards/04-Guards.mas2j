@@ -1,0 +1,16 @@
+/*
+    Jason Project
+
+    -- created on November 07, 2011
+*/
+
+MAS guards {
+
+    environment: c4jason.CartagoEnvironment
+
+    agents:
+    producer agentArchClass c4jason.CAgentArch #2;
+    consumer agentArchClass c4jason.CAgentArch #10;
+		
+    aslSourcePath: "src/asl"; 
+}

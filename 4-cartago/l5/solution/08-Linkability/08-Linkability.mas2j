@@ -1,0 +1,15 @@
+/*
+    Jason Project
+
+    -- created on November 08, 2011
+*/
+
+MAS linkability {
+  environment:
+  c4jason.CartagoEnvironment
+
+  agents:
+  sample agentArchClass c4jason.CAgentArch;
+  
+  aslSourcePath: "src/asl"; 
+}

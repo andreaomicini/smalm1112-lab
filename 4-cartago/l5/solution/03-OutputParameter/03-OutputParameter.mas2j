@@ -1,0 +1,15 @@
+/*
+    Jason Project
+
+    -- created on November 07, 2011
+*/
+
+MAS outputparameter {
+
+    environment: c4jason.CartagoEnvironment
+
+    agents:  
+   	 	sample agentArchClass c4jason.CAgentArch #1;
+		
+    aslSourcePath: "src/asl"; 
+}
