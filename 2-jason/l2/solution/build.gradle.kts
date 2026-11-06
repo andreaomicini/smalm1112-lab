@@ -1,4 +1,4 @@
-// Added in 2026 so the 2011 Jason projects run today, on Jason of October 2011 (../../lib/jason.jar, the one shipped
+// Added in 2026 so the 2011 Jason projects run today, on Jason of October 2011 (../../../lib/jason.jar, the one shipped
 // with lab 4), centralised infrastructure as in their .mas2j.
 //   gradle runHelloworld [-Pconsole]   helloworld/helloworld.mas2j
 //   gradle runFactorial [-Pconsole]    factorial/factorial.mas2j
@@ -9,7 +9,7 @@ plugins {
 }
 
 dependencies {
-    implementation(files("../../lib/jason.jar"))
+    implementation(files("../../../lib/jason.jar"))
 }
 
 val consoleLoggingText =
