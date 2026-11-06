@@ -29,11 +29,11 @@ fun JavaExec.jade(vararg extra: String) {
 }
 
 tasks.register<JavaExec>("run") {
-    val agents = (findProperty("agents") as String?) ?: "broker:alice.mas.lab1.Broker;alice:alice.mas.lab1.Player"
-    jade(*listOfNotNull(if (hasProperty("gui")) "-gui" else null, "-agents", agents).toTypedArray())
+    val agents = (project.findProperty("agents") as String?) ?: "broker:alice.mas.lab1.Broker;alice:alice.mas.lab1.Player"
+    jade(*listOfNotNull(if (project.hasProperty("gui")) "-gui" else null, "-agents", agents).toTypedArray())
 }
 
 tasks.register<JavaExec>("join") {
-    val name = (findProperty("player") as String?) ?: "bob"
+    val name = (project.findProperty("player") as String?) ?: "bob"
     jade("-container", "-container-name", "c-$name", "-agents", "$name:alice.mas.lab1.Player")
 }

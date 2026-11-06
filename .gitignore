@@ -10,3 +10,6 @@ Icon?
 ## Gradle
 .gradle/
 build/
+
+## Jason's logging, written by gradle run -Pconsole
+logging.properties
