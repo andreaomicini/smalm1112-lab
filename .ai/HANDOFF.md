@@ -12,11 +12,15 @@ today (Andrea's request).
 - L1–L7 build and run (Gradle 9, JDK 17), build files only; tested headless,
   every run's processes checked gone.
 - README, `CLAUDE.md`, `AGENTS.md`, icon, logo, `desc/`, CI, VS Code settings.
-- Remotes: GitLab DISI project 94 and GitHub, both private, one `origin`;
+- Remotes: GitLab DISI project 94 (private) and GitHub (public since
+  2026-11-06, Andrea), one `origin`;
   avatar (the SMA 11·12 colour tile) and description; mirror in
   `~/GitHub/andreaomicini/`. First pipeline (2309) green, 7 jobs.
-- APICe, `Course.SmaLm1112.Lab`: the duplicate placeholder lines for L0–L5
-  removed; a `{{courserepo}}` line for this repository first under *Code*.
+- APICe: the Lab page now lives in module 2, `Course.SmaLm1112M2.Lab` (hidden,
+  with the 30 attachments), included by `Course.SmaLm1112.Lab`
+  (`includechildren`). On it: headers as `mainheader`, texts bilingual, L0–L7
+  once, a `{{courserepo}}` line for this repository first under *code*
+  (GitHub shown to guests too).
 
 **Open.** GitHub Desktop did not list the mirror after two `open -a`: add it
 by hand if it is still missing.
