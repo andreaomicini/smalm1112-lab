@@ -36,8 +36,8 @@ to build and run again with build files only. Shaped after `as2021-lab`, as
   its Eclipse `.classpath` put them (`src/`, `src/java`).
 - **`lib/` at the root**: `jason.jar` (Pianini's Jason of October 2011, shipped
   with L4), `cartago.jar` and `c4jason.jar` (October 2010, from his 2010/11 lab:
-  the 2011 projects pointed at a Jason installation). The jars of May 2012 and of
-  2014 behave the same on L5.
+  the 2011 projects pointed at a Jason installation). The jars of May 2012 and
+  of 2014 behave the same on L5.
 - **Inside a task, `hasProperty`, `findProperty` and `extensions` are the
   task's**: use `project.` (a `-Pgui` that did nothing, 2026-11-06).
 - **Jason reads `logging.properties` from the working directory only** (not from
@@ -48,9 +48,9 @@ to build and run again with build files only. Shaped after `as2021-lab`, as
 
 - **Never open windows on Andrea's screen in a test**, and kill the JVM, not
   only `gradle`: `timeout gradle run` leaves the JavaExec JVM alive. Run in a
-  process group of its own, `JAVA_TOOL_OPTIONS=-Djava.awt.headless=true`, `-Pconsole`;
-  `ps` after every run. Two Jason console windows were left open this way on
-  2026-11-06.
+  process group of its own, `JAVA_TOOL_OPTIONS=-Djava.awt.headless=true`,
+  `-Pconsole`; `ps` after every run. Two Jason console windows were left open
+  this way on 2026-11-06.
 - **L1**: players look for opponents once, when they start; started together
   they call each other cheaters forever (5 million lines in 40 s). `run` starts
   one, `join` the others.

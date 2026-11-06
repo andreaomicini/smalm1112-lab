@@ -20,7 +20,8 @@ today (Andrea's request).
   with the 30 attachments), included by `Course.SmaLm1112.Lab`
   (`includechildren`). On it: headers as `mainheader`, texts bilingual, L0–L7
   once, a `{{courserepo}}` line for this repository first under *code*
-  (GitHub shown to guests too).
+  (GitHub shown to guests too). The 2011 external links updated, JADE's
+  (`jade.tilab.com`, down for now) kept on Andrea's word.
 
 **Open.** GitHub Desktop did not list the mirror after two `open -a`: add it
 by hand if it is still missing.
