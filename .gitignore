@@ -1,0 +1,12 @@
+## macOS
+.DS_Store
+## Finder's custom folder icon
+Icon?
+
+## editors
+.idea/
+*.iml
+
+## Gradle
+.gradle/
+build/
