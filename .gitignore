@@ -13,3 +13,6 @@ build/
 
 ## Jason's logging, written by gradle run -Pconsole
 logging.properties
+
+## CI
+.gradle-home/

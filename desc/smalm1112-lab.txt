@@ -1,0 +1,2 @@
+Lab repositories for the "Multiagent Systems LM" 2011/2012 course in Cesena
+https://courses.apice.unibo.it/SmaLm1112

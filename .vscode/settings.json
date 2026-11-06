@@ -1,0 +1,18 @@
+{
+  // SMA-LM 2011/2012 lab -- open the folder or smalm1112-lab.code-workspace.
+
+  // The projects carry no Gradle wrapper: they build with an installed Gradle 9 (Homebrew's here) on a JDK 17,
+  // the 2011 code compiled as Java 8.
+  "java.import.gradle.wrapper.enabled": false,
+  "java.import.gradle.home": "/opt/homebrew/opt/gradle/libexec",
+  "java.import.gradle.java.home": "/opt/homebrew/opt/openjdk@17",
+  "java.configuration.runtimes": [
+    { "name": "JavaSE-17", "path": "/opt/homebrew/opt/openjdk@17", "default": true }
+  ],
+  "java.configuration.updateBuildConfiguration": "automatic",
+
+  "files.exclude": {
+    "**/.gradle": true,
+    "**/build": true
+  }
+}

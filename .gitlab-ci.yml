@@ -1,0 +1,66 @@
+# Builds each class on the DISI GitLab, only when a push touches it: each job enters the class's Gradle builds and
+# compiles them, with Gradle 9 on JDK 17 as on the Mac. Nothing here runs a MAS (the programs never end, and some
+# open windows).
+#
+# Nothing here is needed to use the lab: the same command, run in the project directory, does the same on your own
+# machine.
+
+.gradle: &gradle
+  image: gradle:9-jdk17
+  interruptible: true
+  variables:
+    GRADLE_USER_HOME: $CI_PROJECT_DIR/.gradle-home
+
+1-jade-l1:
+  <<: *gradle
+  rules:
+    - changes: [1-jade/l1/**/*, .gitlab-ci.yml]
+  script:
+    - (cd 1-jade/l1/lab && gradle --no-daemon build)
+    - (cd 1-jade/l1/solution && gradle --no-daemon build)
+
+2-jason-l2:
+  <<: *gradle
+  rules:
+    - changes: [2-jason/l2/**/*, lib/jason.jar, .gitlab-ci.yml]
+  script:
+    - (cd 2-jason/l2/solution && gradle --no-daemon build)
+
+2-jason-l3:
+  <<: *gradle
+  rules:
+    - changes: [2-jason/l3/**/*, lib/jason.jar, .gitlab-ci.yml]
+  script:
+    - (cd 2-jason/l3/lab/WordGame && gradle --no-daemon build)
+    - (cd 2-jason/l3/solution/WordGame && gradle --no-daemon build)
+
+3-jasonjade-l4:
+  <<: *gradle
+  rules:
+    - changes: [3-jasonjade/l4/**/*, .gitlab-ci.yml]
+  script:
+    - (cd 3-jasonjade/l4/lab/WordGame && gradle --no-daemon build)
+    - (cd 3-jasonjade/l4/solution/WordGame && gradle --no-daemon build)
+
+4-cartago-l5:
+  <<: *gradle
+  rules:
+    - changes: [4-cartago/l5/**/*, lib/**/*, .gitlab-ci.yml]
+  script:
+    - (cd 4-cartago/l5/solution && gradle --no-daemon build)
+
+5-boomers-l6:
+  <<: *gradle
+  rules:
+    - changes: [5-boomers/l6/**/*, lib/**/*, .gitlab-ci.yml]
+  script:
+    - (cd 5-boomers/l6/lab && gradle --no-daemon build)
+    - (cd 5-boomers/l6/solution && gradle --no-daemon build)
+
+6-tucson-l7:
+  <<: *gradle
+  rules:
+    - changes: [6-tucson/l7/**/*, .gitlab-ci.yml]
+  script:
+    - (cd 6-tucson/l7/lab && gradle --no-daemon build)
+    - (cd 6-tucson/l7/solution && gradle --no-daemon build)
