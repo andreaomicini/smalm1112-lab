@@ -15,8 +15,7 @@ to build and run again with build files only. Shaped after `as2021-lab`, as
 - **`v1-taught`** (author Danilo Pianini, dated 2011-12-06 18:31, the newest
   file): the 13 archives attached to the course's APICe Lab page
   (`Course.SmaLm1112.Lab`, on `Course.SmaLm1112M2.Lab` since 2026-11-06), what
-  the students downloaded, plus `protocol.jpg`
-  (L3). Left out: the Eclipse workspaces (`.metadata`), `bin/`, `.class`, and
+  the students downloaded, plus `protocol.jpg` (L3). Left out: the Eclipse workspaces (`.metadata`), `bin/`, `.class`, and
   `3code.tar.gz` (its two files are in `3code-asl.tar.gz`). Kept as given: the
   `*~` files, `.stop___MAS`, three Dropbox "conflicted copy" files in L7.
 - `l1/lab` is `1solution.tar.gz` ("code as developed before the lesson"),
